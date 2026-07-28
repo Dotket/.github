@@ -1,0 +1,30 @@
+name: "Nova Funcionalidade"
+description: Sugira uma ideia ou melhoria para o ecossistema Dotket
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Qual é a sua ideia?
+      description: Descreva o que você gostaria que fosse implementado.
+      placeholder: 
+      Exemplo: Adicionar suporte a temas customizados em arquivos CSS...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Por que isso é importante?
+      description: Explique o objetivo ou benefício dessa funcionalidade.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Escopo do Desenvolvimento
+      options:
+        - label: Requer alterações no Frontend (React TS)
+        - label: Requer alterações no Backend (Rust)

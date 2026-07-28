@@ -1,0 +1,42 @@
+name: "Relatório de Bug"
+description: Registre um erro ou comportamento inesperado
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por relatar o problema! Preencha os campos abaixo para nos ajudar a identificar o erro.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Problema
+      description: Uma explicação clara e concisa do que deu errado.
+      placeholder: 
+      Exemplo: Ao clicar no botão de salvar, a tela congela...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para Reproduzir
+      description: Como podemos ver o erro acontecer?
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '....'
+        3. Veja o erro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operacional
+      options:
+        - Windows
+        - Linux
+        - macOS
+    validations:
+      required: true
